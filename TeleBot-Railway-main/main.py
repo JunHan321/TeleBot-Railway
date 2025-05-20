@@ -10,8 +10,8 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 TOKEN = os.environ.get("TOKEN")
-COS_CHAT_ID = "-1002026224982"
-OWNER_CHAT_ID = "-1002373903712"
+COS_CHAT_ID = os.environ.get("COSCHATID")
+OWNER_CHAT_ID = os.environ.get("OWNERCHATID")
 
 # Timezone
 SGT = pytz.timezone('Asia/Singapore')
